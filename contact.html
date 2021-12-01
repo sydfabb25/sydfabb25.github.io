@@ -69,44 +69,11 @@
                 </ul>
             </div>
         </nav>
-        <h1>About Me</h1>
+        <h1>Contact</h1>
     </header>
-    <main>
-        <section id="section_1"></section>
-        <section id="section_2"></section>
-        <section id="section_3"></section>
-        <section id="section_4"></section>
-        <section id="section_5"></section>
-        <section id="contact"></section>
-        <section id="about"></section>
-    </main>
     <footer>
         <p>Sydney Fabbricino</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.js"></script>
-    <script>
-        $("document").ready(() => {
-            $.get("items/experience_1.md").then((sData) => {
-                $("#section_1").append(marked(sData));
-            });
-            $.get("items/experience_2.md").then((sData) => {
-                $("#section_2").append(marked(sData));
-            });
-            $.get("items/experience_3.md").then((sData) => {
-                $("#section_3").append(marked(sData));
-            });
-            $.get("contact.md").then((sData) => {
-                $("#contact").append(marked(sData));
-            });
-            $.get("about.md").then((sData) => {
-                $("#about").append(marked(sData));
-            });
-        });
-    </script>
 </body>
 
 </html>
