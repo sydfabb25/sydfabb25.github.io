@@ -7,14 +7,15 @@
 
 <body>
     <style>
-        :root{
-            --header-background-color: rgb(21,41,59);
-            --header-foreground-color: rgb(216, 209, 210); 
-            --footer-background-color: rgb(216, 209, 210); 
-            --footer-foreground-color: rgb(21,41,59);
-            --nav-background-color: rgb(59,61,89);
-            --nav-foreground-color: rgb(216, 209, 210); 
+        :root {
+            --header-background-color: rgb(201,201,201);
+            --header-foreground-color: rgb(31, 31, 31);
+            --footer-background-color: white;
+            --footer-foreground-color: rgb(44,102,110);
+            --nav-background-color: rgb(2,24,60);
+            --nav-foreground-color: white;
         }
+
         nav.bg-dark {
             color: var(--nav-foreground-color);
             background-color: var(--nav-background-color) !important;
@@ -31,7 +32,7 @@
         }
        
         header{
-            background: rgb(61, 54, 56);
+            background-color: var(--nav-background-color);
         }
 
         .logo{
@@ -74,6 +75,9 @@
             background: var(--header-background-color);
             font-family: 'Roboto Slab', serif;
             font-weight: 800;
+            text-align: left;
+            border: 1px solid rgb(201,201,201);
+            padding: 10px;
         }
 
         h2 {
@@ -94,7 +98,10 @@
 
         footer {
             color: var(--footer-background-color);
-            background: var(--footer-foreground-color);
+            background: var(--footer-foreground-color); 
+            text-align: left;
+            border: 2px solid rgb(44,102,110);
+            padding: 1px 5px;
         }
     </style>
 </head>
