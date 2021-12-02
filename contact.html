@@ -8,11 +8,11 @@
 <body>
     <style>
         :root {
-            --header-background-color: rgb(201,201,201);
+            --header-background-color: rgb(201, 201, 201);
             --header-foreground-color: rgb(31, 31, 31);
             --footer-background-color: white;
-            --footer-foreground-color: rgb(44,102,110);
-            --nav-background-color: rgb(2,24,60);
+            --footer-foreground-color: rgb(44, 102, 110);
+            --nav-background-color: rgb(2, 24, 60);
             --nav-foreground-color: white;
         }
 
@@ -26,31 +26,31 @@
             left: 50%;
         }
 
-        .container{
+        .container {
             width: 80%;
             margin: 0 auto;
         }
-       
-        header{
+
+        header {
             background-color: var(--nav-background-color);
         }
 
-        .logo{
+        .logo {
             float: left;
             padding: 10px 0;
         }
 
-        nav{
+        nav {
             float: right;
         }
-    
-        nav ul{
+
+        nav ul {
             margin: 0;
             padding: 0;
             list-style: none;
         }
 
-        nav li{
+        nav li {
             display: inline-block;
             margin-left: 70px;
             padding-top: 30px;
@@ -58,14 +58,14 @@
             font-family: 'Open Sans Condensed', sans-serif;
         }
 
-        nav a{
+        nav a {
             color: white;
             text-decoration: none;
             width: 100px;
             padding: 15px;
         }
 
-        nav a:hover{
+        nav a:hover {
             background: #000;
             transition: 0.4s;
         }
@@ -76,7 +76,7 @@
             font-family: 'Roboto Slab', serif;
             font-weight: 800;
             text-align: left;
-            border: 1px solid rgb(201,201,201);
+            border: 1px solid rgb(201, 201, 201);
             padding: 10px;
         }
 
@@ -86,7 +86,8 @@
             background-color: var(--nav-foreground-color);
         }
 
-        h3,h4 {
+        h3,
+        h4 {
             font-family: 'Roboto Slab', serif;
             font-weight: 250;
             color: var(--header-background-color);
@@ -98,19 +99,19 @@
 
         footer {
             color: var(--footer-background-color);
-            background: var(--footer-foreground-color); 
+            background: var(--footer-foreground-color);
             text-align: left;
-            border: 2px solid rgb(44,102,110);
+            border: 2px solid rgb(44, 102, 110);
             padding: 1px 5px;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <header>
-        <div class="container">
+    <body>
+        <header>
+            <div class="container">
 
-            <img src="small_logo_white_sf.png">
+                <img src="small_logo_white_sf.png">
 
                 <nav>
                     <ul>
@@ -119,12 +120,26 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-        </div>
-        <h1>Contact</h1>
-    </header>
-    <footer>
-        <p>Sydney Fabbricino</p>
-    </footer>
-</body>
+            </div>
+            <h1>Contact</h1>
+        </header>
+        <form action="http://localhost:3002/send" method="post">
+            <p>
+                <label>Name: <input name="name" type="text" /></label>
+            </p>
+            <p>
+                <label>Email: <input name="email" type="email" /></label>
+            </p>
+            <p>
+                <label>Message: <br /><textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+        <footer>
+            <p>Sydney Fabbricino</p>
+        </footer>
+    </body>
 
 </html>
