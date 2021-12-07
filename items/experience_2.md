@@ -9,4 +9,4 @@ Graphic Design
 
 ### The "Yearbook Divider Page" Project
 
-![yb2](yb2.jpg) ![yb3](yb3.jpg) ![yb1](yb1.jpg)
+![yb2](yb2.png) ![yb3](yb3.png) ![yb1](yb1.png)
