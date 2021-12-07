@@ -94,7 +94,7 @@
         h4 {
             font-family: 'Roboto Slab', serif;
             font-weight: 250;
-            color: var(--header-background-color);
+            color: rgb(110, 110, 110);
         }
 
         p {
@@ -151,18 +151,6 @@
                 });
                 $.get("items/experience_3.md").then((sData) => {
                     $("#section_3").append(marked(sData));
-                });
-                $.get("items/experience_4.md").then((sData) => {
-                    $("#section_4").append(marked(sData));
-                });
-                $.get("items/experience_5.md").then((sData) => {
-                    $("#section_5").append(marked(sData));
-                });
-                $.get("contact.md").then((sData) => {
-                    $("#contact").append(marked(sData));
-                });
-                $.get("about.md").then((sData) => {
-                    $("#about").append(marked(sData));
                 });
             });
         </script>
