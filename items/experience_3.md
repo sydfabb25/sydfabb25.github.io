@@ -1,7 +1,6 @@
 User Experience Design
 --- 
 
-
 ### The "Meditation Site" Project
 #### My Angle
 
