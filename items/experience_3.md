@@ -1,6 +1,11 @@
 User Experience Design
 --- 
+
+
 ### The "Meditation Site" Project
+#### My Angle
+
+I wanted to create the structure for a site that allows users to easily navigate their way through content about meditation. With the help of multiple user studies, I was able to design a site that was easy for users to understand, and contained much content on the topic.  
 
 Task: create a site where users can learn anything they may need to know about meditation. 
 
